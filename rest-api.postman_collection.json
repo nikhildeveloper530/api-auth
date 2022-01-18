@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "f0791e75-e854-4056-9335-25c17d8961fd",
+		"name": "rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post a blog",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGIwNWFkM2YxZjZhNWRmYTIxOTMyOGM1ZmM0Mjg2MDA0NDcyMTU0ZWZkOGFjZmU5NzEyYTRlZDk1MjdmM2QzOTY2NmE4N2U5ZGZiOTY1OGMiLCJpYXQiOjE2NDI0ODQyMzksIm5iZiI6MTY0MjQ4NDIzOSwiZXhwIjoxNjc0MDIwMjM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TemmC96Pogy3kKaL5fHs-2nxHOM38HdRbAdZX1z9qJQscNSEVaE3C7VV6MkJxM7W9tLueNL8mszmFvPtyoNO3OagF6YUmCLgSbCyeFdtAKsvcf_W-a_EePkN2ieoZ8I2xgl7t9WaGL_owV53MGV0I1dC-lyLj4MS9S5_PzQnna683vOR_dXgumZ9xEXlAfnwX7HhrMqbmce2BlN0wwD9h4GJelaZIumDXmhXDO_3t9TzU1Nrn1qJs1ik_JeEsoxVTH4C6oeLormzhxO1i1916eHFQt3aznrEW_yJnQ0ZzslQ9_MklKwqAoaxWoh4o2auqUd4jdqvwHlejHzUBXGDiXuKgjAcCSG6LNv5CyaznrM70ekk_0_OE-URYkP7pqMAdO096ll0fBZ1uKw6OpjzLEVpy93H4A51SvGMYRgVRyfF3-Ll94WSEwiApe-n5qV1QEmDHeB4TmTKKx92niMnDOOrarm3b50Ygbuz0cVAAsdWQPouhNUsehty5P_BQt3LdIo59yAtT8Q7M5_r0vLVfBwEKnzDjlEcEvRdFzWh7zYTr8yJuRJ7p6RHTv929pfNfq5BdSvv8pdNtgueZDlOQQ7noPsD5BvC-9oy4cadwYlOfDcC-s5K4guP_A_ehGE5V0zzIxAc706BGnFffLIY7jr-93nRdzf_hcf74Bj9VHY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Laravel Rest Api",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Laravel rest api using authorization header",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/storeBlog",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"storeBlog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Anil",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anil.ani27@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qwerty",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "qwerty",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List blogs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGIwNWFkM2YxZjZhNWRmYTIxOTMyOGM1ZmM0Mjg2MDA0NDcyMTU0ZWZkOGFjZmU5NzEyYTRlZDk1MjdmM2QzOTY2NmE4N2U5ZGZiOTY1OGMiLCJpYXQiOjE2NDI0ODQyMzksIm5iZiI6MTY0MjQ4NDIzOSwiZXhwIjoxNjc0MDIwMjM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TemmC96Pogy3kKaL5fHs-2nxHOM38HdRbAdZX1z9qJQscNSEVaE3C7VV6MkJxM7W9tLueNL8mszmFvPtyoNO3OagF6YUmCLgSbCyeFdtAKsvcf_W-a_EePkN2ieoZ8I2xgl7t9WaGL_owV53MGV0I1dC-lyLj4MS9S5_PzQnna683vOR_dXgumZ9xEXlAfnwX7HhrMqbmce2BlN0wwD9h4GJelaZIumDXmhXDO_3t9TzU1Nrn1qJs1ik_JeEsoxVTH4C6oeLormzhxO1i1916eHFQt3aznrEW_yJnQ0ZzslQ9_MklKwqAoaxWoh4o2auqUd4jdqvwHlejHzUBXGDiXuKgjAcCSG6LNv5CyaznrM70ekk_0_OE-URYkP7pqMAdO096ll0fBZ1uKw6OpjzLEVpy93H4A51SvGMYRgVRyfF3-Ll94WSEwiApe-n5qV1QEmDHeB4TmTKKx92niMnDOOrarm3b50Ygbuz0cVAAsdWQPouhNUsehty5P_BQt3LdIo59yAtT8Q7M5_r0vLVfBwEKnzDjlEcEvRdFzWh7zYTr8yJuRJ7p6RHTv929pfNfq5BdSvv8pdNtgueZDlOQQ7noPsD5BvC-9oy4cadwYlOfDcC-s5K4guP_A_ehGE5V0zzIxAc706BGnFffLIY7jr-93nRdzf_hcf74Bj9VHY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGIwNWFkM2YxZjZhNWRmYTIxOTMyOGM1ZmM0Mjg2MDA0NDcyMTU0ZWZkOGFjZmU5NzEyYTRlZDk1MjdmM2QzOTY2NmE4N2U5ZGZiOTY1OGMiLCJpYXQiOjE2NDI0ODQyMzksIm5iZiI6MTY0MjQ4NDIzOSwiZXhwIjoxNjc0MDIwMjM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TemmC96Pogy3kKaL5fHs-2nxHOM38HdRbAdZX1z9qJQscNSEVaE3C7VV6MkJxM7W9tLueNL8mszmFvPtyoNO3OagF6YUmCLgSbCyeFdtAKsvcf_W-a_EePkN2ieoZ8I2xgl7t9WaGL_owV53MGV0I1dC-lyLj4MS9S5_PzQnna683vOR_dXgumZ9xEXlAfnwX7HhrMqbmce2BlN0wwD9h4GJelaZIumDXmhXDO_3t9TzU1Nrn1qJs1ik_JeEsoxVTH4C6oeLormzhxO1i1916eHFQt3aznrEW_yJnQ0ZzslQ9_MklKwqAoaxWoh4o2auqUd4jdqvwHlejHzUBXGDiXuKgjAcCSG6LNv5CyaznrM70ekk_0_OE-URYkP7pqMAdO096ll0fBZ1uKw6OpjzLEVpy93H4A51SvGMYRgVRyfF3-Ll94WSEwiApe-n5qV1QEmDHeB4TmTKKx92niMnDOOrarm3b50Ygbuz0cVAAsdWQPouhNUsehty5P_BQt3LdIo59yAtT8Q7M5_r0vLVfBwEKnzDjlEcEvRdFzWh7zYTr8yJuRJ7p6RHTv929pfNfq5BdSvv8pdNtgueZDlOQQ7noPsD5BvC-9oy4cadwYlOfDcC-s5K4guP_A_ehGE5V0zzIxAc706BGnFffLIY7jr-93nRdzf_hcf74Bj9VHY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Larvel Rest API using rest methods\",\n    \"description\":\"Laravel rest api using authorization header and Rest methods such as get, post,put, delete\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/updateBlog/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateBlog",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blog",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGIwNWFkM2YxZjZhNWRmYTIxOTMyOGM1ZmM0Mjg2MDA0NDcyMTU0ZWZkOGFjZmU5NzEyYTRlZDk1MjdmM2QzOTY2NmE4N2U5ZGZiOTY1OGMiLCJpYXQiOjE2NDI0ODQyMzksIm5iZiI6MTY0MjQ4NDIzOSwiZXhwIjoxNjc0MDIwMjM5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TemmC96Pogy3kKaL5fHs-2nxHOM38HdRbAdZX1z9qJQscNSEVaE3C7VV6MkJxM7W9tLueNL8mszmFvPtyoNO3OagF6YUmCLgSbCyeFdtAKsvcf_W-a_EePkN2ieoZ8I2xgl7t9WaGL_owV53MGV0I1dC-lyLj4MS9S5_PzQnna683vOR_dXgumZ9xEXlAfnwX7HhrMqbmce2BlN0wwD9h4GJelaZIumDXmhXDO_3t9TzU1Nrn1qJs1ik_JeEsoxVTH4C6oeLormzhxO1i1916eHFQt3aznrEW_yJnQ0ZzslQ9_MklKwqAoaxWoh4o2auqUd4jdqvwHlejHzUBXGDiXuKgjAcCSG6LNv5CyaznrM70ekk_0_OE-URYkP7pqMAdO096ll0fBZ1uKw6OpjzLEVpy93H4A51SvGMYRgVRyfF3-Ll94WSEwiApe-n5qV1QEmDHeB4TmTKKx92niMnDOOrarm3b50Ygbuz0cVAAsdWQPouhNUsehty5P_BQt3LdIo59yAtT8Q7M5_r0vLVfBwEKnzDjlEcEvRdFzWh7zYTr8yJuRJ7p6RHTv929pfNfq5BdSvv8pdNtgueZDlOQQ7noPsD5BvC-9oy4cadwYlOfDcC-s5K4guP_A_ehGE5V0zzIxAc706BGnFffLIY7jr-93nRdzf_hcf74Bj9VHY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deleteBlog/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteBlog",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
